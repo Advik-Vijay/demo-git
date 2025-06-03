@@ -7,6 +7,9 @@ WORKDIR /app
 # Copy the script into the container
 COPY vijay.py /app
 
+#Expose the application using below port
+EXPOSE 3400
+
 # Run the python application
 CMD ["python", "vijay.py"]
 
